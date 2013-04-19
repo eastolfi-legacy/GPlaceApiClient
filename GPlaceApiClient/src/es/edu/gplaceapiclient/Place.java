@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Place {
 	private ArrayList<Event> events;
+	private Geometry geometry;
 	private String icon;
 	private String id;
-	private Geometry geometry;
 	private String name;
-	private ArrayList<OpeningHour> opening_hours;
+	private OpeningHour opening_hours;
 	private Double rating;
 	private String reference;
 	private ArrayList<String> types;
@@ -49,10 +49,10 @@ public class Place {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public ArrayList<OpeningHour> getOpening_hours() {
+	public OpeningHour getOpening_hours() {
 		return opening_hours;
 	}
-	public void setOpening_hours(ArrayList<OpeningHour> opening_hours) {
+	public void setOpening_hours(OpeningHour opening_hours) {
 		this.opening_hours = opening_hours;
 	}
 	public Double getRating() {
