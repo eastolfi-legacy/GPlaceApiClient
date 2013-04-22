@@ -44,6 +44,7 @@ public class PlaceSearch {
 	public ArrayList<Place> searchPlacesByName(String query, boolean sensor) {
 		String uri = uriBase + searchPlaceByName + "/" + format + "?";
 		uri += "query=" + query + "&";
+		uri += "type=establishment&";	//TIPO HARDCODEADO
 		uri += "sensor=" + sensor + "&";
 		uri += "key=" + API_KEY;
 		
